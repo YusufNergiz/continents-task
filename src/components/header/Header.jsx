@@ -1,12 +1,12 @@
 import React from 'react'
 import styles from "./styles.module.css";
-import worldIcon from "../../assets/World-Flags-Globe.png";
+import globeIcon from "../../assets/globe.svg"
 
 function Header() {
   return (
     <header>
-        <img src={worldIcon} alt="Globe made out of country flags" />
-        <h3>Learn some Geography</h3>
+        <img src={globeIcon} alt="globe image" />
+        <h3>Yussuf Nergiz</h3>
     </header>
   )
 }
