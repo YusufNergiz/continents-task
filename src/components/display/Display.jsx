@@ -6,6 +6,7 @@ import axios from 'axios';
 import CountryBox from '../countryBox/CountryBox';
 import Loading from '../loading/Loading';
 import styles from "./styles.module.css"
+import Spinner from '../spinner/Spinner';
 
 function Display({ code, limit }) {
 
@@ -60,18 +61,21 @@ function Display({ code, limit }) {
         }
     }
 
-if (selectedContinent) {
-    return (
-        <section className='container'>
-            <h5>{selectedContinent.continentName} - {selectedContinent.continentCode}</h5>
-            <div className={styles.countryBoxesContainer}>
-                {selectedContinent.countries.map((country) => (
-                    <CountryBox key={country.code} code={country.code} name={country.name}/>
-                ))}
-            </div>
-        </section>
-    )
-}
+    if (selectedContinent.loading) {
+      return <Spinner />
+    }
+    else if (selectedContinent) {
+      return (
+          <section className='container'>
+              <h5>{selectedContinent.continentName} - {selectedContinent.continentCode}</h5>
+              <div className={styles.countryBoxesContainer}>
+                  {[...selectedContinent.countries].sort(() => 0.5 - Math.random()).slice(0, limit).map((country) => (
+                      <CountryBox key={country.code} code={country.code} name={country.name}/>
+                  ))}
+              </div>
+          </section>
+      )
+  }
 }
 
 export default Display

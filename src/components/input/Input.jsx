@@ -29,7 +29,7 @@ function Input() {
 
   return (
     <>
-        <section className='container d-flex flex-column align-items-center justify-content-center border border-5'>
+        <section className='container d-flex flex-column align-items-center justify-content-center'>
             <select value={selectedContinentCode} onChange={handleContinentSelectChange}>
                 <option value="" hidden>Select a continent</option>
                 {Object.entries(continents).map(([code, name]) => (
@@ -39,7 +39,7 @@ function Input() {
                 ))}
             </select>
 
-            <select value={selectedLimit} onChange={handleLimitSelectChange}>
+            <select value={selectedLimit} onChange={handleLimitSelectChange} className='mt-5'>
                 <option value="" hidden>Select the number of Countries to be displayed</option>
                 {[2, 3, 4, 5, 6, 7, 8, 9, 10].map((value) => (
                     <option key={value} value={value}>

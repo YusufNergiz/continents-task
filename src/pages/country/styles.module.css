@@ -1,0 +1,10 @@
+.button {
+    width: 20rem;
+    border: none;
+    color: black;
+}
+
+.button:hover {
+    width: 30rem;
+    transition: width 0.3s ease-in-out;
+}
