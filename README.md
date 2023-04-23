@@ -1,4 +1,4 @@
-### Vite React App
+# Vite React App
 This is a starter template for a React app using Vite as the build tool.
 
 ## Getting Started
