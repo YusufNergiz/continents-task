@@ -1,5 +1,14 @@
-# Vite React App
-This is a starter template for a React app using Vite as the build tool.
+# Continents
+This project is a React-based web application that provides information about different continents and their countries. The app fetches data from both a GraphQL API and a REST API to populate the user interface with relevant information about each continent and the countries within them.
+
+## Technologies Used
+This project was built using the following technologies:
+
+-Vite: a fast and lightweight development server and build tool for modern web applications.
+-React: a popular JavaScript library for building user interfaces.
+-Bootstrap: a front-end framework for building responsive and mobile-first websites.
+-Redux: a predictable state container for JavaScript applications.
+-Axios: a popular HTTP client library for making API requests.
 
 ## Getting Started
 Prerequisites
