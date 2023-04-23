@@ -23,4 +23,13 @@ npm run dev
 
 This will start the development server and open the app in your default browser.
 
+## Images
+
+![](Images/task1.PNG)
+
+![](Images/task2.PNG)
+
+![](images/task3.PNG)
+
+
 
