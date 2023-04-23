@@ -1,0 +1,9 @@
+.countryBoxesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    gap: 2rem;
+}
