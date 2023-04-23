@@ -4,11 +4,11 @@ This project is a React-based web application that provides information about di
 ## Technologies Used
 This project was built using the following technologies:
 
--Vite: a fast and lightweight development server and build tool for modern web applications.
--React: a popular JavaScript library for building user interfaces.
--Bootstrap: a front-end framework for building responsive and mobile-first websites.
--Redux: a predictable state container for JavaScript applications.
--Axios: a popular HTTP client library for making API requests.
+### -Vite: a fast and lightweight development server and build tool for modern web applications.
+### -React: a popular JavaScript library for building user interfaces.
+### -Bootstrap: a front-end framework for building responsive and mobile-first websites.
+### -Redux: a predictable state container for JavaScript applications.
+### -Axios: a popular HTTP client library for making API requests.
 
 ## Getting Started
 Prerequisites
