@@ -37,11 +37,15 @@ function Country() {
     return <h1>There were no Data found with the given country</h1>
   }
 
+  const capitalCity = data?.capital?.[0] || 'N/A';
+  const currencies = Object.values(data?.currencies || {}).map(currency => currency.name);
+  const languages = Object.values(data?.languages || {});
+
   if (data) {
     return (
       <div className='d-flex justify-content-center align-items-center flex-column'>
         <Header />
-        <Card officalName={data.name.official} capital={data.capital[0]} population={data.population} currency={Object.keys(data.currencies).map(currencyCode => data.currencies[currencyCode].name)} subregion={data.subregion} languages={Object.keys(data.languages)} flag={data.flags.svg}/>
+        <Card officalName={data?.name?.official} capital={capitalCity} population={data?.population} currency={currencies} subregion={data?.subregion} languages={languages} flag={data?.flags?.svg}/>
         <br />
         <Link to={'/'}><button className={styles.button}>Go Back</button></Link>
 
